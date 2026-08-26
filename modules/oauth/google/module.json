@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "engines": {
+    "rootminster": ">=1.0.0",
+    "node": ">=20"
+  },
+  "publisher": {
+    "name": "Open Domains",
+    "url": "https://github.com/open-domains"
+  },
+  "license": "MIT",
+  "id": "rootminster-google-oauth",
+  "name": "Google OAuth",
+  "category": "oauth",
+  "description": "Sign in with Google using OpenID Connect.",
+  "main": "index.js",
+  "permissions": [
+    "network:accounts.google.com",
+    "network:oauth2.googleapis.com",
+    "secrets:read"
+  ],
+  "capabilities": [
+    "oauth:authorize",
+    "oauth:callback",
+    "oauth:profile"
+  ],
+  "dependencies": {},
+  "secrets": [
+    "clientSecret"
+  ],
+  "configSchema": {
+    "type": "object",
+    "required": [
+      "clientId",
+      "clientSecret",
+      "redirectUri"
+    ],
+    "properties": {
+      "clientId": {
+        "type": "string"
+      },
+      "clientSecret": {
+        "type": "string",
+        "format": "password"
+      },
+      "redirectUri": {
+        "type": "string",
+        "format": "uri"
+      },
+      "hostedDomain": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}
