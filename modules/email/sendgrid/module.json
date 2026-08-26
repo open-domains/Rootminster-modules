@@ -1,50 +1,10 @@
 {
-  "schemaVersion": 1,
+  "id": "sendgrid",
+  "name": "SendGrid Email",
   "version": "1.0.0",
-  "engines": {
-    "rootminster": ">=1.0.0",
-    "node": ">=20"
-  },
-  "publisher": {
-    "name": "Open Domains",
-    "url": "https://github.com/open-domains"
-  },
-  "license": "MIT",
-  "id": "rootminster-sendgrid",
-  "name": "SendGrid",
-  "category": "email",
-  "description": "Send transactional email with SendGrid.",
+  "type": "email-provider",
   "main": "index.js",
-  "permissions": [
-    "network:api.sendgrid.com",
-    "secrets:read"
-  ],
-  "capabilities": [
-    "email:send"
-  ],
-  "dependencies": {},
-  "secrets": [
-    "apiKey"
-  ],
-  "configSchema": {
-    "type": "object",
-    "required": [
-      "apiKey",
-      "from"
-    ],
-    "properties": {
-      "apiKey": {
-        "type": "string",
-        "format": "password"
-      },
-      "from": {
-        "type": "string",
-        "format": "email"
-      },
-      "fromName": {
-        "type": "string"
-      }
-    },
-    "additionalProperties": false
-  }
+  "description": "Email delivery using SendGrid's v3 Mail Send API.",
+  "config": ["SENDGRID_API_KEY", "MAIL_FROM", "SENDGRID_FROM_NAME"],
+  "requiredConfig": ["SENDGRID_API_KEY", "MAIL_FROM"]
 }
