@@ -1,50 +1,10 @@
 {
-  "schemaVersion": 1,
-  "version": "1.0.0",
-  "engines": {
-    "rootminster": ">=1.0.0",
-    "node": ">=20"
-  },
-  "publisher": {
-    "name": "Open Domains",
-    "url": "https://github.com/open-domains"
-  },
-  "license": "MIT",
-  "id": "rootminster-cloudflare",
+  "id": "cloudflare",
   "name": "Cloudflare DNS",
-  "category": "dns",
-  "description": "Manage DNS zones and records through Cloudflare.",
+  "version": "1.0.0",
+  "type": "dns-provider",
   "main": "index.js",
-  "permissions": [
-    "network:api.cloudflare.com",
-    "secrets:read"
-  ],
-  "capabilities": [
-    "dns:list",
-    "dns:create",
-    "dns:update",
-    "dns:delete"
-  ],
-  "dependencies": {},
-  "secrets": [
-    "apiToken"
-  ],
-  "configSchema": {
-    "type": "object",
-    "required": [
-      "apiToken"
-    ],
-    "properties": {
-      "apiToken": {
-        "type": "string",
-        "title": "API token",
-        "format": "password"
-      },
-      "accountId": {
-        "type": "string",
-        "title": "Account ID"
-      }
-    },
-    "additionalProperties": false
-  }
+  "description": "Cloudflare zones and DNS records through scoped API tokens.",
+  "config": ["CLOUDFLARE_API_TOKEN"],
+  "requiredConfig": ["CLOUDFLARE_API_TOKEN"]
 }
