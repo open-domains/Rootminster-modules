@@ -1,3 +1,3 @@
-# Google OAuth
+# Google OAuth module
 
-Create a Web application OAuth client and add Rootminster's callback URL as an authorised redirect URI. The core must validate state and nonce.
+Set `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`. Register `${APP_URL}/auth/oauth/google/callback` as an authorized redirect URI.
