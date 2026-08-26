@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "engines": {
+    "rootminster": ">=1.0.0",
+    "node": ">=20"
+  },
+  "publisher": {
+    "name": "Open Domains",
+    "url": "https://github.com/open-domains"
+  },
+  "license": "MIT",
+  "id": "rootminster-sendgrid",
+  "name": "SendGrid",
+  "category": "email",
+  "description": "Send transactional email with SendGrid.",
+  "main": "index.js",
+  "permissions": [
+    "network:api.sendgrid.com",
+    "secrets:read"
+  ],
+  "capabilities": [
+    "email:send"
+  ],
+  "dependencies": {},
+  "secrets": [
+    "apiKey"
+  ],
+  "configSchema": {
+    "type": "object",
+    "required": [
+      "apiKey",
+      "from"
+    ],
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "format": "password"
+      },
+      "from": {
+        "type": "string",
+        "format": "email"
+      },
+      "fromName": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}
