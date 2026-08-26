@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "engines": {
+    "rootminster": ">=1.0.0",
+    "node": ">=20"
+  },
+  "publisher": {
+    "name": "Open Domains",
+    "url": "https://github.com/open-domains"
+  },
+  "license": "MIT",
+  "id": "rootminster-smtp",
+  "name": "SMTP",
+  "category": "email",
+  "description": "Send transactional email through any SMTP server.",
+  "main": "index.js",
+  "permissions": [
+    "network:configured",
+    "secrets:read"
+  ],
+  "capabilities": [
+    "email:send"
+  ],
+  "dependencies": {
+    "nodemailer": "^7.0.0"
+  },
+  "secrets": [
+    "password"
+  ],
+  "configSchema": {
+    "type": "object",
+    "required": [
+      "host",
+      "port",
+      "from"
+    ],
+    "properties": {
+      "host": {
+        "type": "string"
+      },
+      "port": {
+        "type": "integer",
+        "default": 587
+      },
+      "secure": {
+        "type": "boolean",
+        "default": false
+      },
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string",
+        "format": "password"
+      },
+      "from": {
+        "type": "string",
+        "format": "email"
+      }
+    },
+    "additionalProperties": false
+  }
+}
