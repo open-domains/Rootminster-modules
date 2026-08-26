@@ -1,64 +1,10 @@
 {
-  "schemaVersion": 1,
+  "id": "smtp",
+  "name": "SMTP Email",
   "version": "1.0.0",
-  "engines": {
-    "rootminster": ">=1.0.0",
-    "node": ">=20"
-  },
-  "publisher": {
-    "name": "Open Domains",
-    "url": "https://github.com/open-domains"
-  },
-  "license": "MIT",
-  "id": "rootminster-smtp",
-  "name": "SMTP",
-  "category": "email",
-  "description": "Send transactional email through any SMTP server.",
+  "type": "email-provider",
   "main": "index.js",
-  "permissions": [
-    "network:configured",
-    "secrets:read"
-  ],
-  "capabilities": [
-    "email:send"
-  ],
-  "dependencies": {
-    "nodemailer": "^7.0.0"
-  },
-  "secrets": [
-    "password"
-  ],
-  "configSchema": {
-    "type": "object",
-    "required": [
-      "host",
-      "port",
-      "from"
-    ],
-    "properties": {
-      "host": {
-        "type": "string"
-      },
-      "port": {
-        "type": "integer",
-        "default": 587
-      },
-      "secure": {
-        "type": "boolean",
-        "default": false
-      },
-      "username": {
-        "type": "string"
-      },
-      "password": {
-        "type": "string",
-        "format": "password"
-      },
-      "from": {
-        "type": "string",
-        "format": "email"
-      }
-    },
-    "additionalProperties": false
-  }
+  "description": "Standards-based SMTP delivery through Nodemailer.",
+  "config": ["SMTP_HOST", "SMTP_PORT", "SMTP_SECURE", "SMTP_USER", "SMTP_PASS", "MAIL_FROM"],
+  "requiredConfig": ["SMTP_HOST", "MAIL_FROM"]
 }
