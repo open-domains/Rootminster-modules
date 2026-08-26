@@ -1,0 +1,9 @@
+{
+  "id": "discord",
+  "name": "Discord Notifications",
+  "version": "1.0.0",
+  "type": "notification-provider",
+  "main": "index.js",
+  "description": "Discord webhook embeds for operational notifications.",
+  "config": ["DISCORD_WEBHOOK_URL"]
+}
