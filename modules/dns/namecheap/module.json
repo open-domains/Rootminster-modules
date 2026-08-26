@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "engines": {
+    "rootminster": ">=1.0.0",
+    "node": ">=20"
+  },
+  "publisher": {
+    "name": "Open Domains",
+    "url": "https://github.com/open-domains"
+  },
+  "license": "MIT",
+  "id": "rootminster-namecheap",
+  "name": "Namecheap DNS",
+  "category": "dns",
+  "description": "Manage Namecheap host records.",
+  "main": "index.js",
+  "permissions": [
+    "network:api.namecheap.com",
+    "secrets:read"
+  ],
+  "capabilities": [
+    "dns:list",
+    "dns:replace"
+  ],
+  "dependencies": {},
+  "secrets": [
+    "apiKey"
+  ],
+  "configSchema": {
+    "type": "object",
+    "required": [
+      "apiUser",
+      "apiKey",
+      "username",
+      "clientIp"
+    ],
+    "properties": {
+      "apiUser": {
+        "type": "string"
+      },
+      "apiKey": {
+        "type": "string",
+        "format": "password"
+      },
+      "username": {
+        "type": "string"
+      },
+      "clientIp": {
+        "type": "string"
+      },
+      "sandbox": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "additionalProperties": false
+  }
+}
