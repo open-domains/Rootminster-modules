@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "name": "Rootminster Official Module Store",
+  "modules": [
+    {
+      "id": "rootminster-cloudflare",
+      "category": "dns",
+      "name": "Cloudflare DNS",
+      "version": "1.0.0",
+      "path": "modules/dns/cloudflare",
+      "official": true
+    },
+    {
+      "id": "rootminster-namecheap",
+      "category": "dns",
+      "name": "Namecheap DNS",
+      "version": "1.0.0",
+      "path": "modules/dns/namecheap",
+      "official": true
+    },
+    {
+      "id": "rootminster-smtp",
+      "category": "email",
+      "name": "SMTP",
+      "version": "1.0.0",
+      "path": "modules/email/smtp",
+      "official": true
+    },
+    {
+      "id": "rootminster-sendgrid",
+      "category": "email",
+      "name": "SendGrid",
+      "version": "1.0.0",
+      "path": "modules/email/sendgrid",
+      "official": true
+    },
+    {
+      "id": "rootminster-google-oauth",
+      "category": "oauth",
+      "name": "Google OAuth",
+      "version": "1.0.0",
+      "path": "modules/oauth/google",
+      "official": true
+    },
+    {
+      "id": "rootminster-github-oauth",
+      "category": "oauth",
+      "name": "GitHub OAuth",
+      "version": "1.0.0",
+      "path": "modules/oauth/github",
+      "official": true
+    },
+    {
+      "id": "rootminster-docker-engine",
+      "category": "function",
+      "name": "Docker Engine",
+      "version": "1.0.0",
+      "path": "modules/functions/docker-engine",
+      "official": true
+    },
+    {
+      "id": "rootminster-ai-review",
+      "category": "function",
+      "name": "AI Review",
+      "version": "1.0.0",
+      "path": "modules/functions/ai-review",
+      "official": true
+    }
+  ]
+}
