@@ -1,3 +1,3 @@
-# GitHub OAuth
+# GitHub OAuth module
 
-Create a GitHub OAuth App and set its callback URL to the value configured in Rootminster. The core must validate state before exchanging a code.
+Set `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`. Register `${APP_URL}/auth/oauth/github/callback` as the authorization callback URL.
