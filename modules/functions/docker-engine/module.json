@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "engines": {
+    "rootminster": ">=1.0.0",
+    "node": ">=20"
+  },
+  "publisher": {
+    "name": "Open Domains",
+    "url": "https://github.com/open-domains"
+  },
+  "license": "MIT",
+  "id": "rootminster-docker-engine",
+  "name": "Docker Engine",
+  "category": "function",
+  "description": "Inspect and manage approved Docker containers.",
+  "main": "index.js",
+  "permissions": [
+    "docker:socket"
+  ],
+  "capabilities": [
+    "docker:list",
+    "docker:inspect",
+    "docker:start",
+    "docker:stop",
+    "docker:restart"
+  ],
+  "dependencies": {
+    "dockerode": "^4.0.0"
+  },
+  "secrets": [],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "socketPath": {
+        "type": "string",
+        "default": "/var/run/docker.sock"
+      },
+      "allowedLabels": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}
