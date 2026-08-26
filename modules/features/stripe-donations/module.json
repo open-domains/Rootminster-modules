@@ -1,0 +1,11 @@
+{
+  "id": "stripe-donations",
+  "name": "Stripe Donations",
+  "version": "1.0.0",
+  "type": "feature",
+  "main": "index.js",
+  "views": "views",
+  "defaultEnabled": false,
+  "description": "Stripe Checkout donations and cumulative NS-record unlocks.",
+  "config": ["STRIPE_SECRET_KEY", "STRIPE_WEBHOOK_SECRET"]
+}
