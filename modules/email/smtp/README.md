@@ -1,3 +1,3 @@
-# SMTP
+# SMTP email module
 
-Works with a standard authenticated or trusted-relay SMTP server. Port 587 with STARTTLS is recommended where supported.
+Set `EMAIL_PROVIDER=smtp` and the standard SMTP variables. File and URL attachment access are disabled.
