@@ -1,3 +1,3 @@
-# Cloudflare DNS
+# Cloudflare DNS module
 
-Configure a scoped Cloudflare API token with Zone:Read and DNS:Edit for the zones Rootminster manages. Do not use the Global API Key.
+Set `DNS_PROVIDER=cloudflare` and `CLOUDFLARE_API_TOKEN`. The token needs Zone Read and DNS Edit only for the zones managed by the application.
