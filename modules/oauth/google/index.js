@@ -1,0 +1,5 @@
+export default {
+ getAuthorizationUrl({config},{state,nonce}){const q=new URLSearchParams({client_id:config.clientId,redirect_uri:config.redirectUri,response_type:"code",scope:"openid email profile",state,nonce,access_type:"online",...(config.hostedDomain?{hd:config.hostedDomain}:{})});return `https://accounts.google.com/o/oauth2/v2/auth?${q}`;},
+ async exchangeCode(ctx,code){const res=await ctx.fetch("https://oauth2.googleapis.com/token",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({code,client_id:ctx.config.clientId,client_secret:ctx.config.clientSecret,redirect_uri:ctx.config.redirectUri,grant_type:"authorization_code"})});if(!res.ok)throw new Error(`Google token HTTP ${res.status}`);return res.json();},
+ async getUser(ctx,tokens){const res=await ctx.fetch("https://openidconnect.googleapis.com/v1/userinfo",{headers:{Authorization:`Bearer ${tokens.access_token}`}});if(!res.ok)throw new Error(`Google user HTTP ${res.status}`);return res.json();}
+};
