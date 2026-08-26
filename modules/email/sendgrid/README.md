@@ -1,3 +1,3 @@
-# SendGrid
+# SendGrid email module
 
-Create a restricted SendGrid API key with Mail Send permission and verify the configured sender identity.
+Set `EMAIL_PROVIDER=sendgrid`, `SENDGRID_API_KEY`, and `MAIL_FROM`. The module uses the v3 Mail Send API directly and introduces no SendGrid-specific package dependency.
