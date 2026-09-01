@@ -1,9 +1,0 @@
-{
-  "id": "google",
-  "name": "Google OAuth",
-  "version": "1.0.0",
-  "type": "oauth-provider",
-  "main": "index.js",
-  "description": "Google OpenID Connect sign-in.",
-  "config": ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET"]
-}

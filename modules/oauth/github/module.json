@@ -1,9 +1,0 @@
-{
-  "id": "github",
-  "name": "GitHub OAuth",
-  "version": "1.0.0",
-  "type": "oauth-provider",
-  "main": "index.js",
-  "description": "GitHub OAuth sign-in with verified email lookup.",
-  "config": ["GITHUB_CLIENT_ID", "GITHUB_CLIENT_SECRET"]
-}

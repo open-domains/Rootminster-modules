@@ -1,9 +1,0 @@
-{
-  "id": "base44-migration",
-  "name": "Base44 Migration",
-  "version": "1.0.0",
-  "type": "feature",
-  "main": "index.js",
-  "description": "One-time migration of Base44 entity exports into Rootminster MongoDB.",
-  "defaultEnabled": false
-}

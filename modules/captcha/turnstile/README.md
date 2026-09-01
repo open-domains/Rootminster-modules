@@ -1,3 +1,0 @@
-# Turnstile CAPTCHA module
-
-Set `CAPTCHA_PROVIDER=turnstile`, `TURNSTILE_SITE_KEY`, and `TURNSTILE_SECRET_KEY`.

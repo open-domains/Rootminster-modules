@@ -1,9 +1,0 @@
-{
-  "id": "turnstile",
-  "name": "Cloudflare Turnstile",
-  "version": "1.0.0",
-  "type": "captcha-provider",
-  "main": "index.js",
-  "description": "Server-side Turnstile verification and public site-key exposure.",
-  "config": ["TURNSTILE_SITE_KEY", "TURNSTILE_SECRET_KEY"]
-}
