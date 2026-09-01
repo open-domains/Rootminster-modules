@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "name": "Official Rootminster Module Store",
+  "publisher": "open-domains",
+  "modules": [
+    {
+      "id": "cloudflare-dns",
+      "name": "Cloudflare DNS",
+      "version": "1.0.0",
+      "description": "Manage approved Cloudflare zones and DNS records through Rootminster's reviewed adapter.",
+      "manifestUrl": "https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/modules/cloudflare-dns/module.json",
+      "manifestSha256": "a4afe0d7ce0f8d8a3c86e213ffb53c758800eaea65f6e841b36f3c6840fe3fe1"
+    },
+    {
+      "id": "discord-bot",
+      "name": "Discord Bot",
+      "version": "1.0.0",
+      "description": "Let linked users submit requests and let authorized staff review and manage them from Discord.",
+      "manifestUrl": "https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/modules/discord-bot/module.json",
+      "manifestSha256": "15eacf3ddcf02ec72d9e5e5e008d171507dbcf9a85592b69a6e36b8e2556fd4b"
+    },
+    {
+      "id": "safety-screening",
+      "name": "Automated Safety Screening",
+      "version": "1.0.0",
+      "description": "Screen requests with Rootminster policy checks and an optional reputation provider.",
+      "manifestUrl": "https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/modules/safety-screening/module.json",
+      "manifestSha256": "4e7f966ced2ee6c56b04fe7ddab4e086338c42f1f93202dbb0d277765bd9b13c"
+    }
+  ]
+}

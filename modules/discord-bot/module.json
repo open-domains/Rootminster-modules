@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "discord-bot",
+  "name": "Discord Bot",
+  "version": "1.0.0",
+  "publisher": "open-domains",
+  "description": "Let linked users submit requests and let authorized staff review and manage them from Discord.",
+  "runtime": "declarative-v1",
+  "target": "discord",
+  "permissions": ["requests.read", "requests.manage", "notifications.send", "settings.read", "audit.write"],
+  "minimumCoreVersion": "0.0.0",
+  "homepage": "https://github.com/open-domains/Rootminster-modules/tree/main/modules/discord-bot"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "safety-screening",
+  "name": "Automated Safety Screening",
+  "version": "1.0.0",
+  "publisher": "open-domains",
+  "description": "Screen requests with Rootminster policy checks and an optional reputation provider.",
+  "runtime": "declarative-v1",
+  "target": "safety",
+  "permissions": ["requests.read", "safety.assess", "http.fetch", "audit.write"],
+  "minimumCoreVersion": "0.0.0",
+  "homepage": "https://github.com/open-domains/Rootminster-modules/tree/main/modules/safety-screening"
+}

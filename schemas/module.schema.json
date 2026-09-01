@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rootminster.com/schemas/module-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "version", "publisher", "description", "runtime", "target", "permissions", "minimumCoreVersion"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "publisher": { "const": "open-domains" },
+    "description": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "runtime": { "const": "declarative-v1" },
+    "target": { "enum": ["cloudflare", "discord", "safety"] },
+    "permissions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["dns.read", "dns.write", "zones.read", "requests.read", "requests.manage", "notifications.send", "safety.assess", "http.fetch", "settings.read", "audit.write"] }
+    },
+    "minimumCoreVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "homepage": { "type": "string", "format": "uri" }
+  }
+}

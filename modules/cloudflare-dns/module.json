@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "cloudflare-dns",
+  "name": "Cloudflare DNS",
+  "version": "1.0.0",
+  "publisher": "open-domains",
+  "description": "Manage approved Cloudflare zones and DNS records through Rootminster's reviewed adapter.",
+  "runtime": "declarative-v1",
+  "target": "cloudflare",
+  "permissions": ["zones.read", "dns.read", "dns.write", "audit.write"],
+  "minimumCoreVersion": "0.0.0",
+  "homepage": "https://github.com/open-domains/Rootminster-modules/tree/main/modules/cloudflare-dns"
+}
