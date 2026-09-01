@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "phishing-detector",
+  "name": "Phishing Detector",
+  "version": "1.0.0",
+  "publisher": "open-domains",
+  "description": "Add credential-bait, urgency, protected-brand lookalike and suspicious redirect signals to request screening.",
+  "runtime": "declarative-v1",
+  "target": "phishing",
+  "permissions": ["requests.read", "safety.assess", "audit.write"],
+  "minimumCoreVersion": "0.0.0",
+  "homepage": "https://github.com/open-domains/Rootminster-modules/tree/main/modules/phishing-detector"
+}

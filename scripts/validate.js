@@ -9,7 +9,7 @@ const versionPattern = /^\d+\.\d+\.\d+$/;
 const digestPattern = /^[a-f0-9]{64}$/;
 const urlPrefix = 'https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/';
 const permissions = new Set(['dns.read', 'dns.write', 'zones.read', 'requests.read', 'requests.manage', 'notifications.send', 'safety.assess', 'http.fetch', 'settings.read', 'audit.write']);
-const targets = new Set(['cloudflare', 'discord', 'safety']);
+const targets = new Set(['branding', 'cloudflare', 'discord', 'disposable_email', 'phishing', 'safety']);
 
 const fail = (message) => { throw new Error(message); };
 const load = async (path) => JSON.parse(await readFile(resolve(root, path), 'utf8'));

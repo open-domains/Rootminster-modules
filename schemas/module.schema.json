@@ -12,7 +12,7 @@
     "publisher": { "const": "open-domains" },
     "description": { "type": "string", "minLength": 1, "maxLength": 500 },
     "runtime": { "const": "declarative-v1" },
-    "target": { "enum": ["cloudflare", "discord", "safety"] },
+    "target": { "enum": ["branding", "cloudflare", "discord", "disposable_email", "phishing", "safety"] },
     "permissions": {
       "type": "array",
       "uniqueItems": true,

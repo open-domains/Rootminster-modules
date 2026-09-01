@@ -20,6 +20,30 @@
       "manifestSha256": "15eacf3ddcf02ec72d9e5e5e008d171507dbcf9a85592b69a6e36b8e2556fd4b"
     },
     {
+      "id": "disposable-email",
+      "name": "Disposable Email Detection",
+      "version": "1.0.0",
+      "description": "Block new registrations from known disposable-email services, with an optional custom domain list.",
+      "manifestUrl": "https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/modules/disposable-email/module.json",
+      "manifestSha256": "5329622dda5afef8701300c93f4c9f716f1b37ca1ae343ac53c2e8c2a38bc04f"
+    },
+    {
+      "id": "phishing-detector",
+      "name": "Phishing Detector",
+      "version": "1.0.0",
+      "description": "Add deterministic credential, urgency, brand-lookalike, and suspicious URL signals to request safety screening.",
+      "manifestUrl": "https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/modules/phishing-detector/module.json",
+      "manifestSha256": "4361242d7f1134ffd972bb6bc7dbef3c5d512dceb1216b8bebdc6110db23042d"
+    },
+    {
+      "id": "branding-manager",
+      "name": "Branding Manager",
+      "version": "1.0.0",
+      "description": "Customize the platform name, logo, primary color, and support link from Module Settings.",
+      "manifestUrl": "https://raw.githubusercontent.com/open-domains/Rootminster-modules/main/modules/branding-manager/module.json",
+      "manifestSha256": "c1a8006e2714041f768120b6f702a9c1d3059b51f0e2f947179f2b88db3fc083"
+    },
+    {
       "id": "safety-screening",
       "name": "Automated Safety Screening",
       "version": "1.0.0",

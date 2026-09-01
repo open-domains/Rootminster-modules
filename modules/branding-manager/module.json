@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "branding-manager",
+  "name": "Branding Manager",
+  "version": "1.0.0",
+  "publisher": "open-domains",
+  "description": "Customize the public platform name, short name, logo, primary colour and support destination.",
+  "runtime": "declarative-v1",
+  "target": "branding",
+  "permissions": ["settings.read", "audit.write"],
+  "minimumCoreVersion": "0.0.0",
+  "homepage": "https://github.com/open-domains/Rootminster-modules/tree/main/modules/branding-manager"
+}

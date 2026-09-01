@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "disposable-email",
+  "name": "Disposable Email Detection",
+  "version": "1.0.0",
+  "publisher": "open-domains",
+  "description": "Block new accounts that use known temporary email services or administrator-supplied disposable domains.",
+  "runtime": "declarative-v1",
+  "target": "disposable_email",
+  "permissions": ["settings.read", "audit.write"],
+  "minimumCoreVersion": "0.0.0",
+  "homepage": "https://github.com/open-domains/Rootminster-modules/tree/main/modules/disposable-email"
+}
